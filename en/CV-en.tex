@@ -1,0 +1,289 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+ \usepackage{ragged2e}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+%\titleformat{\section}{
+%  \vspace{-4pt}\scshape\raggedright\large
+%}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+%\titleformat{\section}{
+	%	\vspace{-4pt}\scshape\bfseries\raggedright\large
+	%}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}{
+	\vspace{-4pt}\bfseries\MakeUppercase\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeItemAlt}[2]{
+	\vspace{-2pt}
+	\item\small{
+		\textbf{#1}{#2 \vspace{-2pt}}
+	}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace {-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2\\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingAlt}[6]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2\\
+		\textit{\small#3} & \textit{\small #4} \\
+		\textit{\small#5} & \textit{\small #6} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProject}[2]{
+	\vspace {-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1}\\
+		{\small\href{#2}{#2}} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize} }
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\usepackage{setspace}
+
+\renewcommand{\baselinestretch}{1.5} 
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	\justify
+
+	\setstretch{1.5}
+	%\onehalfspacing
+%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\LARGE Yuri Pereira Marca} & Jaraguá do Sul - SC, Brazil
+	\\
+	& Phone: +55 48 99976-2173 \\
+	& Email: \href{mailto:yurimarca@gmail.com}{yurimarca@gmail.com} \\
+	& GitHub: \href{https://github.com/yurimarca}{https://github.com/yurimarca}\\
+	& LinkedIn: \href{https://www.linkedin.com/in/yurimarca/}{https://www.linkedin.com/in/yurimarca/}
+	
+\end{tabular*}
+
+%-----------Presentation Letter-----------------
+\section{Presentation Letter}
+
+
+I am a Data Scientist with a strong background in machine learning, optimization, and MLOps, focused on developing scalable AI solutions and deploying models into production. I hold a Bachelor’s in Electronic Engineering and a Master’s in Information Systems, with international academic experience across Japan, the United Kingdom, and Canada. This diverse background has equipped me with strong analytical skills, the ability to quickly understand and implement state-of-the-art research, and a scientific approach to solving complex industry challenges.
+
+In my industry experience, I have worked extensively with machine learning and deep learning frameworks to train and fine-tune models for predictive modeling, anomaly detection, and computer vision. My expertise in MLOps enables me to design and implement end-to-end pipelines that ensure reproducibility and scalability. Leveraging tools like MLflow, Docker, and cloud platforms such as AWS and DigitalOcean, I have successfully deployed machine learning models and integrated them into production via API services.
+
+With a strong foundation in statistical analysis and optimization, I am particularly interested in Generative AI and LLMs, actively exploring their potential in real-world applications. I am eager to contribute to cutting-edge AI solutions and look forward to collaborating with professionals and organizations driving AI innovation in production environments.
+
+
+
+%-----------PROFESSIONAL-EXPERIENCE-----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{WEG}{Jaragua do Sul, Brazil}
+{Data Scientist}{Jun. 2024 -- Present}
+\resumeItemListStart
+\resumeItem{Predictive Maintenance \& Anomaly Detection}
+{Designed and deployed machine learning and deep learning models for predictive maintenance and condition monitoring of wind turbines.}
+\resumeItem{End-to-End MLOps}
+{Developed a scalable and automated MLOps pipeline using MLflow, Docker, and AWS, ensuring reproducible model training, deployment, and continuous monitoring in production environments.}
+\resumeItem{AI Deployment \& Cloud Integration}
+{Integrated ML models into production via API services, optimizing model inference for real-time anomaly detection and predictive analytics.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Macnica DHW}{Florianópolis, Brazil}
+{Data Scientist}{Nov. 2022 -- Oct. 2023}
+\resumeItemListStart
+\resumeItem{Supervised Learning}
+{Developed machine learning models for data classification to support the development of an intelligent sensor.}
+\resumeItem{Computer Vision APIs}
+{Built and deployed APIs for computer vision applications, including an anonymization API that removes people from videos.}
+\resumeItem{IoT Development}
+{Led the development of an IoT product, implementing MQTT communication and used InfluxDB for time series data storage.}
+\resumeItemListEnd
+
+\resumeSubheading
+{University of Warwick, Warwick Business School}{Coventry, United Kingdom}
+{Ph.D. Research}{Oct. 2019 -- Apr. 2022}
+\resumeItemListStart
+\resumeItem{Field of Research}
+{Ranking \& Selection; Bayesian Optimization; Reinforcement Learning.}
+\resumeItem{Research}
+{Under the supervision of Juergen Branke, focused on budget-efficient policy learning in sequential decision problems, improving sampling efficiency in Monte Carlo Tree Search (MCTS).}
+\resumeItem{Collaboration}
+{Worked with Prof. Chun-Hung Chen (George Mason University, US) on Bayesian approaches for optimal decision-making.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Shinshu University}{Nagano, Japan}
+{MSc Research}{Apr. 2017 -- Mar. 2019}
+\resumeItemListStart
+\resumeItem{Field of Research}
+{Multi-objective Optimization; Genetic algorithms; Evolutionary Computation.}
+\resumeItem{Research}
+{Studied the impact of Pareto set topologies on multi-objective evolutionary algorithms (MOEAs) and developed a novel method to enhance their performance.}
+\resumeItem{International Collaboration}
+{Worked with researchers from Japan, Mexico, and France.}
+\resumeItem{Recognition}
+{Received the Student Best Paper Award at EMO-2019 (Michigan State University, US).}
+\resumeItemListEnd
+
+\resumeSubheadingAlt
+{SSE Gridtech}{Curitiba, Brazil}
+{Internship}{Oct. 2014 -- Dec. 2015}       
+{R\&D Engineer}{Jan. 2016 -- Aug. 2016}
+\resumeItemListStart
+\resumeItem{Smart Grid \& IoT Solutions}
+{Developed a long-range LoRaWAN-based communication system to optimize smart metering infrastructure, reducing GSM dependency.}
+\resumeItemListEnd
+             
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Shinshu University}{Nagano, Japan}
+{Master of Engineering in Electronics and Information System}{Apr. 2017 -- Mar. 2019}
+\resumeItemListStart
+\resumeItemAlt{}
+{MEXT Monbukagakusho Scholarship (Japanese Government)}
+\resumeItemListEnd
+\resumeSubheading
+{Concordia University}{Montreal, Canada}
+{Exchange Student, Electrical Engineering}{Aug. 2012 -- Aug. 2013}
+\resumeItemListStart
+\resumeItemAlt{}
+{Science Without Borders Scholarship (Brazilian Government)}
+\resumeItemListEnd
+\resumeSubheading
+{Federal University of Technology - Parana}{Curitiba, Brazil}
+{Bachelor of Engineering in Electronics}{Jan. 2010 -- Jul. 2016}
+\resumeSubHeadingListEnd
+
+%--------TECHNICAL EXPERTISE------------
+\section{Technical Expertise}
+
+\begin{tabular}{l @{\quad} l}
+	\textbf{Programming Languages:}& Python, C, C++, Bash (Unix Shell).\\
+	\textbf{Machine Learning Frameworks:} & PyTorch, scikit-learn, XGBoost, FastAI.\\
+	\textbf{MLOps \& Deployment Tools:}& Docker, MLflow, Hydra, Git, CI/CD (GitLab, GitHub Actions), FastAPI.\\
+	\textbf{Data Engineering \& Pipelines:}& Dask, PostgreSQL, Redshift, InfluxDB, SQL.\\
+	\textbf{Cloud Platforms:}& AWS (SageMaker, ECR, S3, EC2), DigitalOcean.\\
+	\textbf{Optimization:}& Bayesian Optimization, Multi-objective Evolutionary Algorithms. \\
+	\textbf{Operating Systems:}& Linux (Fedora, Ubuntu), Windows.\\
+\end{tabular}
+
+
+%--------LANGUAGES------------
+\section{Languages}
+
+\begin{tabular}{l @{\quad} l}
+	\textbf{Portuguese:}&Native\\
+	\textbf{English:}&Fluent \\
+	\textbf{Japanese:}&Conversational \\
+\end{tabular}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+
+\resumeSubHeadingListStart
+\resumeProject
+{End-to-End Machine Learning Pipeline for Short-Term Rental Price Prediction}{https://github.com/yurimarca/build-ml-pipeline-for-short-term-rental-prices}
+\begin{itemize}
+	\item Developed a reproducible ML pipeline to predict short-term rental prices in New York City, ensuring scalability for weekly data updates.
+	\item Implemented data ingestion, cleaning, validation, and feature engineering processes to prepare datasets for modeling.
+	\item Trained and optimized a Random Forest regression model, employing hyperparameter tuning to enhance predictive performance.
+	\item Utilized MLflow for experiment tracking and model management, and integrated Weights \& Biases for artifact tracking and visualization.
+	\item Designed the pipeline for seamless retraining with new data, facilitating continuous model improvement and deployment.
+\end{itemize}
+
+\resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+\resumeItemListStart
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Approximating Pareto set topology by cubic interpolation on bi-objective problems. 10th International Conference on Evolutionary Multi-Criterion Optimization (EMO 2019), Lecture Notes in Computer Science (LNCS), Michigan, USA. \textbf{(Best Student Paper Award)}}	
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. NSGA-II with Spline Interpolation on Bi-objective Problems with Difficult Pareto Set Topology. JPNSEC 2018 Symposium on Evolutionary Computation, Fukuoka, 2018. \textbf{(Young Research Award)}}
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. MOEAs on Problems with Difficult Pareto Set Topologies. IEICE Shin-etsu Branch IEEE Session, Niigata University, 2018, p. 169.\textbf{(Young Research Award)}}
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Pareto dominance-based MOEAs on problems with difficult pareto set topologies. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '18). ACM, New York, NY, USA, 189-190.}
+	\resumeItemAlt{}
+	{C. E. A. L. Rocha, \textbf{Y. P. Marca}, F. K. Schneider. Support Platform for Decision-Making in Research and Technological Development in Public Health. ESPACIOS (CARACAS), v. 39, p. 14-26, 2018.}
+
+	\resumeItemAlt{}
+	{\textbf{Y. P. Marca}, S. Scholze. Proposta de Substituição da Comunicação GSM em Smart Grids por Rádios de Longo Alcance. XXXIII Simpósio Brasileiro de Telecomunicações, 2015, Juiz de Fora, MG. Anais Completo da Programação Técnica, 2015.}
+
+	\resumeItemAlt{}
+	{\textbf{Y. P. Marca}, C. E. A. L. Rocha, B. Schneider Jr , F. K. Schneider. Plataforma de Apoio ao Processo Decisório em Pesquisa e Desenvolvimento Tecnológico em Saúde. Congresso Brasileiro de Engenharia Biomédica, 2012, Porto de Galinhas. ANAIS - CBEB 2012, 2012.}
+	\resumeItemAlt{}
+	{M. P. Krause, D. M. Nakato, \textbf{Y. P. Marca}, F. K. Schneider. Gerenciamento do Controle da Glicemia Utilizando um Aplicativo para Celular. Congresso Brasileiro de Engenharia Biomédica, 2012, Porto de Galinhas. ANAIS - CBEB 2012, 2012.}
+	
+\resumeItemListEnd
+
+
+%-------------------------------------------
+\end{document}
