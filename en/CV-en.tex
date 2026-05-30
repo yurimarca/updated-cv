@@ -94,7 +94,7 @@
 
 \usepackage{setspace}
 
-\renewcommand{\baselinestretch}{1.5} 
+\renewcommand{\baselinestretch}{1.5}
 
 
 %-------------------------------------------
@@ -102,7 +102,7 @@
 
 
 \begin{document}
-	
+
 	\justify
 
 	\setstretch{1.5}
@@ -115,18 +115,18 @@
 	& Email: \href{mailto:yurimarca@gmail.com}{yurimarca@gmail.com} \\
 	%& Website: \href{https://yurimarca.github.io}{https://yurimarca.github.io} \\
 	& LinkedIn: \href{https://www.linkedin.com/in/yurimarca/}{https://www.linkedin.com/in/yurimarca/}
-	
+
 \end{tabular*}
 
 %-----------Presentation Letter-----------------
 \section{Presentation Letter}
 
 
-I am a Data Scientist and AI/ML Engineer with a strong background in electronic engineering, optimization, and MLOps. I focus on developing scalable AI solutions and deploying them into production. Currently, I am leading the development and deployment of AI voice agents for a real estate operation, enabling automated phone interactions by integrating tools for real-time information retrieval, messaging, and email communication. I hold a Bachelor’s in Electronic Engineering and a Master’s in Information Systems, with international academic experience across Japan, the United Kingdom, and Canada. This diverse background has equipped me with strong analytical skills, the ability to quickly understand and implement state-of-the-art research, and a scientific approach to solving complex industry challenges.
+I am an AI/ML Engineer and researcher with deep expertise in agentic AI systems, optimization, and MLOps, focused on compressing the cycle from research prototype to production deployment. I have architected production-grade multi-agent workflows (Google ADK, LangGraph), built retrieval-augmented generation systems grounding enterprise knowledge retrieval in live document corpora, and deployed full-stack AI services with automated LLM-as-Judge evaluation harnesses and end-to-end observability pipelines. My academic research spans Bayesian optimization, Monte Carlo Tree Search, and multi-objective evolutionary algorithms, having produced internationally recognized results including a Best Student Paper Award at EMO-2019 and multiple peer-reviewed publications that establish a rigorous, experiment-driven research foundation.
 
-In my industry experience, I have worked extensively with machine learning and deep learning frameworks to train and fine-tune models for predictive modeling, anomaly detection, and computer vision. In MLOps, I build end-to-end pipelines that ensure reproducibility and scalability. Leveraging tools like MLflow, Docker, Kubernetes, and the cloud platform AWS, I have successfully deployed machine learning models and integrated them into production via API services. My experience also spans IoT systems, from firmware development to model deployment on edge devices.
+My industry experience covers the complete research-to-production cycle, from designing scalable, reproducible MLOps pipelines (MLflow, Docker, Kubernetes, AWS) for predictive maintenance and anomaly detection at WEG, to deploying low-latency voice AI and knowledge-grounded generation systems at Zazmic. I hold a Master's in Engineering from Shinshu University (MEXT Government Scholar) and a Bachelor's in Electronic Engineering, with international academic experience across Japan, the United Kingdom, and Canada.
 
-I am eager to contribute to impactful, production-grade AI solutions and collaborate with teams building the future of intelligent systems at scale.
+I am motivated to contribute to research programs where agentic AI amplifies the depth and breadth of what a research team can accomplish, by designing parallel agent workflows, building automated experiment infrastructure, and shipping production-ready intelligent systems at scale.
 
 
 %-----------PROFESSIONAL-EXPERIENCE-----------------
@@ -134,8 +134,19 @@ I am eager to contribute to impactful, production-grade AI solutions and collabo
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Dry Ground AI}{Texas, United States of America}
-{AI Engineer}{Mar. 2025 -- Present}
+{Zazmic Inc}{United States of America (Remote)}
+{AI/ML Engineer}{Dec. 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Agentic AI Systems}{Architected production-grade multi-agent workflows using Google ADK and LangGraph, including ReAct agents for NL2SQL, Human-in-the-Loop (HITL) state management, and autonomous generators capable of ingesting diverse, multimodal unstructured data..}
+\resumeItem{Real-Time Voice AI}{Engineered a low-latency, bidirectional voice agent utilizing WebSockets, FastAPI, and the Gemini Live API; implemented asynchronous tool definitions to support seamless, hands-free user interactions and real-time agent capabilities.}
+\resumeItem{Retrieval-Augmented Generation}{Architected production RAG systems on GCP Vertex AI, grounding enterprise knowledge retrieval in live document corpora with citation-traceable outputs.}
+\resumeItem{Evaluation \& Agentic CI/CD}{Implemented LLM-as-Judge automated evaluation harnesses alongside dual-tracing (Langfuse + OpenTelemetry); deployed containerized agentic services via GitHub Actions CI/CD to GCP Cloud Run, compressing prototype-to-production cycles through automated quality gates.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Dry Ground AI}{United States of America (Remote)}
+{AI Engineer}{Mar. 2025 -- Nov. 2025}
 \resumeItemListStart
 \resumeItem{AI Voice Agent Development}{Developed and deployed AI voice agents to answer real estate-related calls; integrated tools to retrieve up-to-date information, send messages and emails, and automate client interactions.}
 \resumeItem{Client Profiling \& Lead Generation}{Developed a data science workflow for classifying user profiles and identifying potential clients, supporting strategic sales initiatives.}
@@ -147,11 +158,11 @@ I am eager to contribute to impactful, production-grade AI solutions and collabo
 {Data Scientist}{Jun. 2024 -- Mar. 2025}
 \resumeItemListStart
 \resumeItem{Predictive Maintenance \& Anomaly Detection}
-{Designed and deployed machine learning and deep learning models for predictive maintenance and condition monitoring of wind turbines.}
+{Trained an Isolation Forest model to detect anomalies in wind turbine converters, deployed as an API on AWS SageMaker; the model anticipated historical failures by up to two weeks and identified approximately 70\% of the interventions listed in maintenance service orders.}
+\resumeItem{Explainability \& Root-Cause Diagnosis}
+{Developed a companion SHAP-based API enabling maintenance engineers to diagnose the root causes of detected anomalies, bridging automated detection and corrective action.}
 \resumeItem{End-to-End MLOps}
-{Developed a scalable and automated MLOps pipeline using MLflow, Docker, and AWS, ensuring reproducible model training, deployment, and continuous monitoring in production environments.}
-\resumeItem{AI Deployment \& Cloud Integration}
-{Deployed ML models via API services, optimizing real-time inference for anomaly detection and predictive analytics.}
+{Built a reproducible MLOps pipeline (MLflow, Docker, Kubernetes, AWS) spanning automated training, versioning, deployment, and live monitoring via Grafana dashboards backed by InfluxDB, enabling iterative model improvements at production scale with full experiment lineage tracking.}
 \resumeItemListEnd
 
 
@@ -160,12 +171,28 @@ I am eager to contribute to impactful, production-grade AI solutions and collabo
 {Data Scientist}{Nov. 2022 -- Oct. 2023}
 \resumeItemListStart
 \resumeItem{Smart Sensors}
-{Developed machine learning models for data classification to support the development of an intelligent IoT sensor.}
+{Developed an SVM-based classification pipeline for vibration sensor data; applied Multi-objective Genetic Algorithms (NSGA-II via \texttt{pymoo}) to optimize the trade-off between model accuracy and computational efficiency for edge hardware deployment.}
 \resumeItem{Computer Vision APIs}
-{Built and deployed APIs for computer vision applications, including an anonymization API that removes people from videos.}
+{Built a dual-layer video anonymization API using OpenCV and DBSCAN clustering for motion-based person detection, with a pre-trained ResNet-50-FPN model (PyTorch) as a verification layer; optimized specifically for low frame-rate surveillance footage.}
 \resumeItem{IoT Development}
-{Led IoT product development, implementing MQTT communication and utilizing InfluxDB for time series data storage.}
+{Led end-to-end IoT product development with full Docker containerization of the edge-to-cloud stack (MQTT Broker, PostgreSQL, InfluxDB, Grafana, Python services); implemented edge computing including FFT calculations directly on Senspider hardware.}
 \resumeItemListEnd
+
+\resumeSubheadingAlt
+{SSE Gridtech}{Curitiba, Brazil}
+{Internship}{Oct. 2014 -- Dec. 2015}
+{R\&D Engineer}{Jan. 2016 -- Aug. 2016}
+\resumeItemListStart
+\resumeItem{Smart Grid \& IoT Solutions}
+{Developed a long-range LoRaWAN-based communication system to optimize smart metering infrastructure, reducing GSM dependency.}
+\resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------------
+\section{Research Experience}
+\resumeSubHeadingListStart
 
 \resumeSubheading
 {University of Warwick, Warwick Business School}{Coventry, United Kingdom}
@@ -174,9 +201,9 @@ I am eager to contribute to impactful, production-grade AI solutions and collabo
 \resumeItem{Field of Research}
 {Ranking \& Selection; Bayesian Optimization; Reinforcement Learning.}
 \resumeItem{Research}
-{Under the supervision of Juergen Branke, focused on budget-efficient policy learning in sequential decision problems, improving sampling efficiency in Monte Carlo Tree Search (MCTS).}
+{Investigated sample-efficient policy learning for automating constrained supply chain scheduling of biopharmaceutical products (personalized therapies); developed Multi-Objective MCTS (MO-MCTS) using marginal hypervolume as the selection criterion and integrated Evolutionary Algorithms to evolve base policies, combining Bayesian optimization with ranking-and-selection theory.}
 \resumeItem{Collaboration}
-{Worked with Prof. Chun-Hung Chen (George Mason University, US) on Bayesian approaches for optimal decision-making.}
+{Under supervision of Prof. Juergen Branke, we collaborated with Prof. Chun-Hung Chen on two-stage Ranking and Selection (R\&S) problems, which contributed to research extending Optimal Computing Budget Allocation (OCBA) and Expected Value of Information (EVI) algorithms to efficiently allocate finite stochastic simulation budgets on Bayesian approaches for optimal decision-making.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -193,17 +220,7 @@ I am eager to contribute to impactful, production-grade AI solutions and collabo
 {Received the Student Best Paper Award at EMO-2019 (Michigan State University, US).}
 \resumeItemListEnd
 
-\resumeSubheadingAlt
-{SSE Gridtech}{Curitiba, Brazil}
-{Internship}{Oct. 2014 -- Dec. 2015}       
-{R\&D Engineer}{Jan. 2016 -- Aug. 2016}
-\resumeItemListStart
-\resumeItem{Smart Grid \& IoT Solutions}
-{Developed a long-range LoRaWAN-based communication system to optimize smart metering infrastructure, reducing GSM dependency.}
-\resumeItemListEnd
-             
-
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -227,19 +244,47 @@ I am eager to contribute to impactful, production-grade AI solutions and collabo
 {Bachelor of Engineering in Electronics}{Jan. 2010 -- Jul. 2016}
 \resumeSubHeadingListEnd
 
+\newpage
+
 %--------TECHNICAL EXPERTISE------------
 \section{Technical Expertise}
 
-\begin{tabular}{l @{\quad} l}
+\begin{tabular}{l @{\quad} p{0.55\linewidth}}
 	\textbf{Programming Languages:}& Python, C, C++, Bash (Unix Shell).\\
-	\textbf{AI \& Machine Learning Frameworks:} & PyTorch, scikit-learn, XGBoost, LangChain.\\
+	\textbf{Frontend Development:}& React, JavaScript, TypeScript, HTML, CSS.\\
+	\textbf{AI \& Machine Learning Frameworks:} & PyTorch, Hugging Face Transformers, scikit-learn, XGBoost, LangChain, LangGraph, Google ADK.\\
 	\textbf{MLOps \& Deployment Tools:}& Docker, Kubernetes, MLflow, Git, CI/CD, FastAPI, Grafana.\\
 	\textbf{Embedded Systems:}& ARM Cortex-M, Jetson Nano, Arduino, FreeRTOS, MQTT.\\
 	\textbf{Data Engineering \& Pipelines:}& PostgreSQL, Redshift, InfluxDB.\\
-	\textbf{Cloud Platforms:}& AWS (SageMaker, ECR, S3, EC2, Lambda Functions).\\
-	\textbf{Optimization:}& Bayesian Optimization, Multi-objective Evolutionary Algorithms. \\
+	\textbf{Cloud Platforms:}& AWS (SageMaker, ECR, S3, EC2, Lambda), GCP (Cloud Run, Vertex AI).\\
+	\textbf{Optimization:}& Bayesian Optimization, Multi-objective Evolutionary Algorithms.\\
 	\textbf{Operating Systems:}& Linux (Fedora, Ubuntu), Windows.\\
 \end{tabular}
+
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+\resumeItemListStart
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Approximating Pareto set topology by cubic interpolation on bi-objective problems. 10th International Conference on Evolutionary Multi-Criterion Optimization (EMO 2019), Lecture Notes in Computer Science (LNCS), Michigan, USA. \textbf{(Best Student Paper Award)}}
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. NSGA-II with Spline Interpolation on Bi-objective Problems with Difficult Pareto Set Topology. JPNSEC 2018 Symposium on Evolutionary Computation, Fukuoka, 2018. \textbf{(Young Research Award)}}
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. MOEAs on Problems with Difficult Pareto Set Topologies. IEICE Shin-etsu Branch IEEE Session, Niigata University, 2018, p. 169.\textbf{(Young Research Award)}}
+	\resumeItemAlt{}
+	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Pareto dominance-based MOEAs on problems with difficult pareto set topologies. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '18). ACM, New York, NY, USA, 189-190.}
+	\resumeItemAlt{}
+	{C. E. A. L. Rocha, \textbf{Y. P. Marca}, F. K. Schneider. Support Platform for Decision-Making in Research and Technological Development in Public Health. ESPACIOS (CARACAS), v. 39, p. 14-26, 2018.}
+
+	\resumeItemAlt{}
+	{\textbf{Y. P. Marca}, S. Scholze. Proposta de Substituição da Comunicação GSM em Smart Grids por Rádios de Longo Alcance. XXXIII Simpósio Brasileiro de Telecomunicações, 2015, Juiz de Fora, MG. Anais Completo da Programação Técnica, 2015.}
+
+	\resumeItemAlt{}
+	{\textbf{Y. P. Marca}, C. E. A. L. Rocha, B. Schneider Jr , F. K. Schneider. Plataforma de Apoio ao Processo Decisório em Pesquisa e Desenvolvimento Tecnológico em Saúde. Congresso Brasileiro de Engenharia Biomédica, 2012, Porto de Galinhas. ANAIS - CBEB 2012, 2012.}
+	\resumeItemAlt{}
+	{M. P. Krause, D. M. Nakato, \textbf{Y. P. Marca}, F. K. Schneider. Gerenciamento do Controle da Glicemia Utilizando um Aplicativo para Celular. Congresso Brasileiro de Engenharia Biomédica, 2012, Porto de Galinhas. ANAIS - CBEB 2012, 2012.}
+
+\resumeItemListEnd
 
 
 %--------LANGUAGES------------
@@ -267,31 +312,6 @@ I am eager to contribute to impactful, production-grade AI solutions and collabo
 \end{itemize}
 
 \resumeSubHeadingListEnd
-
-
-%-----------PUBLICATIONS-----------------
-\section{Publications}
-\resumeItemListStart
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Approximating Pareto set topology by cubic interpolation on bi-objective problems. 10th International Conference on Evolutionary Multi-Criterion Optimization (EMO 2019), Lecture Notes in Computer Science (LNCS), Michigan, USA. \textbf{(Best Student Paper Award)}}	
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. NSGA-II with Spline Interpolation on Bi-objective Problems with Difficult Pareto Set Topology. JPNSEC 2018 Symposium on Evolutionary Computation, Fukuoka, 2018. \textbf{(Young Research Award)}}
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. MOEAs on Problems with Difficult Pareto Set Topologies. IEICE Shin-etsu Branch IEEE Session, Niigata University, 2018, p. 169.\textbf{(Young Research Award)}}
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Pareto dominance-based MOEAs on problems with difficult pareto set topologies. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '18). ACM, New York, NY, USA, 189-190.}
-	\resumeItemAlt{}
-	{C. E. A. L. Rocha, \textbf{Y. P. Marca}, F. K. Schneider. Support Platform for Decision-Making in Research and Technological Development in Public Health. ESPACIOS (CARACAS), v. 39, p. 14-26, 2018.}
-
-	\resumeItemAlt{}
-	{\textbf{Y. P. Marca}, S. Scholze. Proposta de Substituição da Comunicação GSM em Smart Grids por Rádios de Longo Alcance. XXXIII Simpósio Brasileiro de Telecomunicações, 2015, Juiz de Fora, MG. Anais Completo da Programação Técnica, 2015.}
-
-	\resumeItemAlt{}
-	{\textbf{Y. P. Marca}, C. E. A. L. Rocha, B. Schneider Jr , F. K. Schneider. Plataforma de Apoio ao Processo Decisório em Pesquisa e Desenvolvimento Tecnológico em Saúde. Congresso Brasileiro de Engenharia Biomédica, 2012, Porto de Galinhas. ANAIS - CBEB 2012, 2012.}
-	\resumeItemAlt{}
-	{M. P. Krause, D. M. Nakato, \textbf{Y. P. Marca}, F. K. Schneider. Gerenciamento do Controle da Glicemia Utilizando um Aplicativo para Celular. Congresso Brasileiro de Engenharia Biomédica, 2012, Porto de Galinhas. ANAIS - CBEB 2012, 2012.}
-	
-\resumeItemListEnd
 
 
 %-------------------------------------------

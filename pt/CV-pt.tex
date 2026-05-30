@@ -121,38 +121,49 @@
 	
 	\section{Carta de Apresentação}
 	
-	Sou um Cientista de Dados com forte experiência em machine learning, otimização e MLOps, focado no desenvolvimento de soluções escaláveis de IA e na implantação de modelos em produção. Sou formado em Engenharia Eletrônica e mestre em Sistemas de Informação, com experiência acadêmica internacional no Japão, Reino Unido e Canadá. Essa trajetória diversificada me proporcionou habilidades analíticas avançadas, permitindo compreender e implementar rapidamente pesquisas de ponta, aplicando métodos científicos para solucionar desafios complexos da indústria.
-	
-	Na minha experiência profissional, trabalhei extensivamente com frameworks de machine learning e deep learning para treinar e ajustar modelos voltados para modelagem preditiva, detecção de anomalias e visão computacional. Minha expertise em MLOps me permite projetar e implementar pipelines completos, garantindo reprodutibilidade e escalabilidade. Utilizando ferramentas como MLflow, Docker e plataformas em nuvem como AWS e DigitalOcean, implantei modelos de machine learning com sucesso e os integrei a sistemas de produção via APIs.
-	
-	Com uma base sólida em análise estatística e otimização, tenho um interesse especial em IA Generativa e LLMs, explorando ativamente seu potencial em aplicações reais. Estou motivado a contribuir para soluções inovadoras de IA e pronto para colaborar com profissionais e organizações que impulsionam a inovação.
+	Sou um Engenheiro de IA/ML com profunda expertise em sistemas de IA agêntica, otimização e MLOps, focado em comprimir o ciclo do protótipo de pesquisa à implantação em produção. Arquitetei fluxos de trabalho multi-agente em produção (Google ADK, LangGraph), construí sistemas de geração aumentada por recuperação fundamentando a recuperação de conhecimento corporativo em corpora de documentos ativos, e implantei serviços de IA completos com harnesses de avaliação LLM-as-Judge e pipelines de observabilidade de ponta a ponta. Minha pesquisa acadêmica abrange otimização Bayesiana, Monte Carlo Tree Search e algoritmos evolutivos multiobjetivo, tendo produzido resultados reconhecidos internacionalmente, incluindo o prêmio Best Student Paper Award no EMO-2019 e múltiplas publicações revisadas por pares.
+
+	Minha experiência na indústria cobre o ciclo completo de pesquisa à produção, desde o design de pipelines escaláveis e reprodutíveis de MLOps (MLflow, Docker, Kubernetes, AWS) para manutenção preditiva e detecção de anomalias na WEG, até a implantação de sistemas de voz com IA de baixa latência na Zazmic. Sou Mestre em Engenharia pela Shinshu University (Bolsista MEXT do Governo Japonês) e Bacharel em Engenharia Eletrônica, com experiência acadêmica internacional no Japão, Reino Unido e Canadá.
+
+	Estou motivado a contribuir para programas de pesquisa onde a IA agêntica amplifica a profundidade e amplitude do que uma equipe pode realizar, projetando fluxos de trabalho de agentes paralelos, construindo infraestrutura automatizada de experimentos e entregando sistemas inteligentes prontos para produção em escala.
 	
 	%-----------EXPERIÊNCIA PROFISSIONAL-----------------
 	\section{Experiência Profissional}
 	\resumeSubHeadingListStart
-	
+
+	\resumeSubheading
+	{Zazmic Inc}{Remoto}
+	{Engenheiro de IA/ML}{Dez. 2025 -- Presente}
+	\resumeItemListStart
+	\resumeItem{Sistemas de IA Agêntica}{Arquitetou fluxos de trabalho multi-agente em produção com Google ADK e LangGraph, incluindo agentes ReAct para NL2SQL, gerenciamento de estado com Human-in-the-Loop (HITL) e geração autônoma de propostas a partir de briefings, PDFs e gravações de reuniões.}
+	\resumeItem{IA de Voz em Tempo Real}{Projetou um pipeline de voz bidirecional de baixa latência conectando áudio do navegador (WebSockets) a um backend FastAPI e à Gemini Live API (gRPC), implementando 14 ferramentas assíncronas para operações de e-commerce por voz, incluindo gestão de carrinho e checkout.}
+	\resumeItem{Geração Aumentada por Recuperação (RAG)}{Desenvolveu pipelines RAG com Vertex AI RAG Engine e Google Gemini para fundamentar respostas de chatbot corporativo em repositórios do Google Drive, com atribuição automática de fontes via metadados nativos de grounding.}
+	\resumeItem{Observabilidade \& Implantação em Nuvem}{Instrumentou stacks de observabilidade com OpenTelemetry e rastreamento duplo (Langfuse + Google Cloud Trace); implantou serviços no Google Cloud Run via GitHub Actions CI/CD com Workload Identity Federation e frameworks de avaliação LLM-as-Judge.}
+	\resumeItemListEnd
+
+
 	\resumeSubheading
 	{WEG}{Jaraguá do Sul, Brasil}
-	{Cientista de Dados}{Jun. 2024 -- Presente}
+	{Cientista de Dados}{Jun. 2024 -- Mar. 2025}
 	\resumeItemListStart
 	\resumeItem{Manutenção Preditiva \& Detecção de Anomalias}
-	{Desenvolvimento e implementação de modelos de machine learning e deep learning para manutenção preditiva e monitoramento de condição de turbinas eólicas.}
+	{Treinou um modelo Isolation Forest para detectar anomalias em conversores de turbinas eólicas, implantado como API no AWS SageMaker; o modelo antecipou falhas históricas em até duas semanas e identificou aproximadamente 70\% das intervenções listadas nas ordens de serviço de manutenção.}
+	\resumeItem{Explicabilidade \& Diagnóstico de Causa Raiz}
+	{Desenvolveu uma API complementar baseada em SHAP para diagnosticar as causas raiz das anomalias detectadas, permitindo ação corretiva mais ágil pela equipe de manutenção.}
 	\resumeItem{MLOps Completo}
-	{Desenvolvimento de um pipeline escalável e automatizado de MLOps utilizando MLflow, Docker e AWS, garantindo reprodutibilidade no treinamento, implantação e monitoramento contínuo de modelos em produção.}
-	\resumeItem{Implantação de IA \& Integração com Nuvem}
-	{Implantação de modelos de ML em produção via APIs, otimizando a inferência em tempo real para detecção de anomalias e análise preditiva.}
+	{Construiu um pipeline reprodutível de MLOps (MLflow, Docker, Kubernetes, AWS) abrangendo treinamento automatizado, versionamento, implantação e monitoramento em tempo real via dashboards Grafana alimentados por InfluxDB.}
 	\resumeItemListEnd
 	
 	\resumeSubheading
 	{Macnica DHW}{Florianópolis, Brasil}
 	{Cientista de Dados}{Nov. 2022 -- Out. 2023}
 	\resumeItemListStart
-	\resumeItem{Aprendizado Supervisionado}
-	{Desenvolvimento de modelos de machine learning para classificação de dados e suporte ao desenvolvimento de sensores inteligentes.}
+	\resumeItem{Sensores Inteligentes}
+	{Desenvolveu um pipeline de classificação baseado em SVM para dados de sensores de vibração; aplicou Algoritmos Genéticos Multiobjetivo (NSGA-II via \texttt{pymoo}) para otimizar o compromisso entre acurácia do modelo e eficiência computacional para implantação em hardware embarcado.}
 	\resumeItem{APIs de Visão Computacional}
-	{Criação e implantação de APIs para aplicações de visão computacional, incluindo uma API de anonimização que remove pessoas de vídeos.}
+	{Construiu uma API de anonimização de vídeo em duas camadas usando OpenCV e clusterização DBSCAN para detecção de pessoas por movimento, com verificação por um modelo ResNet-50-FPN pré-treinado (PyTorch); otimizada para vídeos de vigilância de varejo com baixa taxa de quadros.}
 	\resumeItem{Desenvolvimento de IoT}
-	{Liderança no desenvolvimento de um produto IoT, incluindo a implementação do protocolo MQTT e o armazenamento de dados temporais no InfluxDB.}
+	{Liderou o desenvolvimento completo de produto IoT com containerização Docker de toda a stack edge-to-cloud (Broker MQTT, PostgreSQL, InfluxDB, Grafana, serviços Python); implementou computação de borda incluindo cálculos de FFT diretamente no hardware Senspider.}
 	\resumeItemListEnd
 	
 	\resumeSubheading
@@ -162,7 +173,7 @@
 	\resumeItem{Área de Pesquisa}
 	{Ranking \& Seleção; Otimização Bayesiana; Aprendizado por Reforço.}
 	\resumeItem{Pesquisa}
-	{Sob supervisão de Juergen Branke, trabalhei no aprendizado eficiente de políticas em problemas de decisão sequenciais, aprimorando a eficiência amostral do Monte Carlo Tree Search (MCTS).}
+	{Investigou o aprendizado eficiente de políticas para automatizar o planejamento de cadeias de suprimentos de produtos biofarmacêuticos (terapias personalizadas de células CAR-T); desenvolveu MCTS Multiobjetivo (MO-MCTS) usando hipervolume marginal como critério de seleção e integrou Algoritmos Evolutivos para evoluir políticas base, combinando otimização Bayesiana com teoria de ranking e seleção.}
 	\resumeItem{Colaboração}
 	{Trabalho conjunto com Prof. Chun-Hung Chen (George Mason University, EUA) em abordagens Bayesiana para tomada de decisão ótima.}
 	\resumeItemListEnd
@@ -217,13 +228,15 @@
 	%--------EXPERTISE TÉCNICA------------
 	\section{Expertise Técnica}
 	
-	\begin{tabular}{l @{\quad} l}
+	\begin{tabular}{l @{\quad} p{0.55\linewidth}}
 		\textbf{Linguagens de Programação:}& Python, C, C++, Bash (Unix Shell).\\
-		\textbf{Frameworks de Machine Learning:} & PyTorch, scikit-learn, XGBoost, FastAI.\\
-		\textbf{MLOps \& Implantação:}& Docker, MLflow, Hydra, Git, CI/CD (GitLab, GitHub Actions), FastAPI.\\
-		\textbf{Engenharia de Dados:}& Dask, PostgreSQL, Redshift, InfluxDB, SQL.\\
-		\textbf{Plataformas em Nuvem:}& AWS (SageMaker, ECR, S3, EC2), DigitalOcean.\\
-		\textbf{Otimização:}& Otimização Bayesiana, Algoritmos Evolutivos Multiobjetivo. \\
+		\textbf{Desenvolvimento Frontend:}& React, JavaScript, TypeScript, HTML, CSS.\\
+		\textbf{Frameworks de IA e Machine Learning:} & PyTorch, Hugging Face Transformers, scikit-learn, XGBoost, LangChain, LangGraph, Google ADK.\\
+		\textbf{MLOps \& Implantação:}& Docker, Kubernetes, MLflow, Git, CI/CD, FastAPI, Grafana.\\
+		\textbf{Sistemas Embarcados:}& ARM Cortex-M, Jetson Nano, Arduino, FreeRTOS, MQTT.\\
+		\textbf{Engenharia de Dados:}& PostgreSQL, Redshift, InfluxDB.\\
+		\textbf{Plataformas em Nuvem:}& AWS (SageMaker, ECR, S3, EC2, Lambda), GCP (Cloud Run, Vertex AI).\\
+		\textbf{Otimização:}& Otimização Bayesiana, Algoritmos Evolutivos Multiobjetivo.\\
 		\textbf{Sistemas Operacionais:}& Linux (Fedora, Ubuntu), Windows.\\
 	\end{tabular}
 	
