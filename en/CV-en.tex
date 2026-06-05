@@ -113,7 +113,7 @@
 	\\
 	& Phone: +55 48 99976-2173 \\
 	& Email: \href{mailto:yurimarca@gmail.com}{yurimarca@gmail.com} \\
-	%& Website: \href{https://yurimarca.github.io}{https://yurimarca.github.io} \\
+	& Github: \href{https://github.com/yurimarca}{https://github.com/yurimarca} \\
 	& LinkedIn: \href{https://www.linkedin.com/in/yurimarca/}{https://www.linkedin.com/in/yurimarca/}
 
 \end{tabular*}
@@ -124,7 +124,7 @@
 
 I am an AI/ML Engineer and researcher with deep expertise in agentic AI systems, optimization, and MLOps, focused on compressing the cycle from research prototype to production deployment. I have architected production-grade multi-agent workflows using Google ADK and LangGraph, built retrieval-augmented generation systems, and deployed full-stack AI services with automated LLM-as-Judge evaluation harnesses. Throughout these projects, I led the architectural design, established foundational engineering standards to empower cross-functional teams, and guided engineering execution.
 
-My academic research spans Bayesian optimization, Monte Carlo Tree Search, and multi-objective evolutionary algorithms, having produced internationally recognized results including a Best Student Paper Award at EMO-2019 and multiple peer-reviewed publications. My industry experience covers the complete research-to-production cycle. This includes designing scalable MLOps pipelines at WEG where I mentored peer engineers and aligned stakeholders, as well as deploying low-latency voice AI and knowledge-grounded systems at Zazmic while coordinating lean development teams.
+My academic research spans Bayesian optimization, Monte Carlo Tree Search, and multi-objective evolutionary algorithms, having produced internationally recognized results including a Best Student Paper Award at EMO 2019 and multiple peer-reviewed publications. My industry experience covers the complete research-to-production cycle. This includes designing scalable MLOps pipelines, conducting LLM fine-tuning research, and developing deep generative models at WEG where I mentored peer engineers and aligned stakeholders, as well as deploying low-latency voice AI and knowledge-grounded systems at Zazmic while coordinating lean development teams.
 
 I hold a Master's in Engineering from Shinshu University as a MEXT Government Scholar and a Bachelor's in Electronic Engineering, with international academic experience across Japan, the United Kingdom, and Canada. I am driven to bring this unique blend of rigorous academic research and production engineering to a collaborative environment. My goal is to lead the development of next-generation intelligent workflows, bridge the gap between discovery and deployment, and help scale the collective impact of engineering and research teams.  
 
@@ -157,12 +157,14 @@ I hold a Master's in Engineering from Shinshu University as a MEXT Government Sc
 {WEG}{Jaragua do Sul, Brazil}
 {Data Scientist}{Jun. 2024 -- Mar. 2025}
 \resumeItemListStart
-\resumeItem{Predictive Maintenance \& Anomaly Detection}
-{Trained an Isolation Forest model to detect anomalies in wind turbine converters, deployed as an API on AWS SageMaker; the model anticipated historical failures by up to two weeks and identified approximately 70\% of the interventions listed in maintenance service orders.}
-\resumeItem{Explainability \& Root-Cause Diagnosis}
-{Developed a companion SHAP-based API enabling maintenance engineers to diagnose the root causes of detected anomalies, bridging automated detection and corrective action.}
+\resumeItem{Wind Turbine Anomaly Detection}
+{Deployed a production anomaly detection system on AWS SageMaker anticipating failures up to two weeks ahead and flagging $\sim$70\% of maintenance interventions; companion explainability API surfaced root-cause diagnostics for maintenance engineers.}
 \resumeItem{End-to-End MLOps}
 {Built a reproducible MLOps pipeline (MLflow, Docker, Kubernetes, AWS) spanning automated training, versioning, deployment, and live monitoring via Grafana dashboards backed by InfluxDB, enabling iterative model improvements at production scale with full experiment lineage tracking.}
+\resumeItem{Deep Generative Modeling}
+{Initiated PyTorch VAE research for wind turbine fault classification using latent-space health indicators and reconstruction-error thresholding over SCADA signals; architecture designed and early training conducted before project handoff.}
+\resumeItem{LLM Fine-Tuning Research}
+{Led technical scoping to domain-adapt an open-weights LLM via Supervised Fine-Tuning (SFT) for NL-to-structured IoT workflow compilation; designed training corpus pipeline and execution-based evaluation harness; proposal approved by corporate leadership.}
 \resumeItemListEnd
 
 
@@ -249,8 +251,9 @@ I hold a Master's in Engineering from Shinshu University as a MEXT Government Sc
 
 \begin{tabular}{l @{\quad} p{0.6\linewidth}}
 	\textbf{Programming Languages:}& Python, C, C++, Bash (Unix Shell).\\
-	\textbf{ML \& Deep Learning:}& PyTorch, Hugging Face, scikit-learn, XGBoost.\\
+	\textbf{ML \& Deep Learning:}& PyTorch, Hugging Face Transformers, scikit-learn, XGBoost.\\
 	\textbf{LLM \& Agentic Frameworks:}& LangChain, LangGraph, Google ADK, Gemini Live API, OpenAI API, Anthropic Claude.\\
+	\textbf{LLM Training \& Alignment:}& SFT, QLoRA, Unsloth.\\
 	\textbf{Observability \& Evaluation:}& Langfuse, LangSmith, OpenTelemetry, Grafana.\\
 	\textbf{MLOps \& Deployment:}& Docker, Kubernetes, MLflow, Git, CI/CD, FastAPI.\\
 	\textbf{Embedded Systems:}& ARM Cortex-M, Jetson Nano, Arduino, FreeRTOS, MQTT.\\
