@@ -8,7 +8,9 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=NavyBlue, linkcolor=black}
 \usepackage{fancyhdr}
+\usepackage{needspace}
 
  \usepackage{ragged2e}
 
@@ -58,6 +60,7 @@
 
 
 \newcommand{\resumeSubheading}[4]{
+  \needspace{6\baselineskip}
   \vspace {-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2\\
@@ -66,6 +69,7 @@
 }
 
 \newcommand{\resumeSubheadingAlt}[6]{
+  \needspace{6\baselineskip}
 	\vspace{-1pt}\item
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2\\
@@ -86,7 +90,7 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize} }
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -111,7 +115,6 @@
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{\LARGE Yuri Pereira Marca} & Florianopolis, Brazil
 	\\
-	& Phone: +55 48 99976-2173 \\
 	& Email: \href{mailto:yurimarca@gmail.com}{yurimarca@gmail.com} \\
 	& Github: \href{https://github.com/yurimarca}{https://github.com/yurimarca} \\
 	& LinkedIn: \href{https://www.linkedin.com/in/yurimarca/}{https://www.linkedin.com/in/yurimarca/}
@@ -122,11 +125,11 @@
 \section{Presentation Letter}
 
 
-I am an AI/ML Engineer and researcher with deep expertise in agentic AI systems, optimization, and MLOps, focused on compressing the cycle from research prototype to production deployment. I have architected production-grade multi-agent workflows using Google ADK and LangGraph, built retrieval-augmented generation systems, and deployed full-stack AI services with automated LLM-as-Judge evaluation harnesses. Throughout these projects, I led the architectural design, established foundational engineering standards to empower cross-functional teams, and guided engineering execution.
+I am an AI Engineer and solution architect who designs, builds, and ships production LLM systems end to end, from shaping the solution with clients in pre-sales through architecture, implementation, cloud deployment, and knowledge transfer. My focus is the layers that decide whether an LLM system works in production: evaluation, retrieval and data design, and compliance. I build evaluation harnesses that show where accuracy is lost, use them to drive architecture and roadmap decisions, and benchmark model, cost, and latency trade-offs up front.
 
-My academic research spans Bayesian optimization, Monte Carlo Tree Search, and multi-objective evolutionary algorithms, having produced internationally recognized results including a Best Student Paper Award at EMO 2019 and multiple peer-reviewed publications. My industry experience covers the complete research-to-production cycle. This includes designing scalable MLOps pipelines, conducting LLM fine-tuning research, and developing deep generative models at WEG where I mentored peer engineers and aligned stakeholders, as well as deploying low-latency voice AI and knowledge-grounded systems at Zazmic while coordinating lean development teams.
+I have worked remotely with US companies delivering agentic AI to clients in healthcare, travel, media, and real estate: HIPAA-compliant document pipelines, multimodal document automation integrated with ERPs, NL2SQL and RAG assistants, and real-time voice agents that handle calls and operate web applications. Before that, I spent years in industrial AI in Brazil, taking ML from prototype to production: predictive maintenance and MLOps on AWS for wind turbines, and edge ML, computer vision, and IoT products.
 
-I hold a Master's in Engineering from Shinshu University as a MEXT Government Scholar and a Bachelor's in Electronic Engineering, with international academic experience across Japan, the United Kingdom, and Canada. I am driven to bring this unique blend of rigorous academic research and production engineering to a collaborative environment. My goal is to lead the development of next-generation intelligent workflows, bridge the gap between discovery and deployment, and help scale the collective impact of engineering and research teams.  
+I am looking to lead AI engineering and system architecture: setting technical direction, making trade-offs explicit, working closely with clients and stakeholders, and raising the engineering bar of the teams I work with.
 
 
 %-----------PROFESSIONAL-EXPERIENCE-----------------
@@ -137,10 +140,12 @@ I hold a Master's in Engineering from Shinshu University as a MEXT Government Sc
 {Zazmic Inc}{United States of America (Remote)}
 {AI/ML Engineer}{Dec. 2025 -- Present}
 \resumeItemListStart
-\resumeItem{Agentic AI Systems}{Architected production-grade multi-agent workflows using Google ADK and LangGraph, including ReAct agents for NL2SQL, Human-in-the-Loop (HITL) state management, and autonomous generators capable of ingesting diverse, multimodal unstructured data.}
-\resumeItem{Real-Time Voice AI}{Engineered a low-latency, bidirectional voice agent utilizing WebSockets, FastAPI, and the Gemini Live API; implemented asynchronous tool definitions to support seamless, hands-free user interactions and real-time agent capabilities.}
-\resumeItem{Retrieval-Augmented Generation}{Architected production RAG systems on GCP Vertex AI, grounding enterprise knowledge retrieval in live document corpora with citation-traceable outputs.}
-\resumeItem{Evaluation \& Agentic CI/CD}{Implemented LLM-as-Judge automated evaluation harnesses alongside dual-tracing (Langsmith/Langfuse + OpenTelemetry); deployed containerized agentic services via GitHub Actions CI/CD to GCP Cloud Run, compressing prototype-to-production cycles through automated quality gates.}
+\resumeItem{Solution Architecture \& Technical Ownership}{Technical owner of generative-AI engagements on GCP across healthcare, travel, and media, from pre-sales demos and estimates through architecture, delivery, and handover.}
+\resumeItem{Evaluation-Driven Engineering}{Built evaluation harnesses, LLM-as-Judge suites, and trace-based root-cause analysis that pinpoint where accuracy is lost and steer architecture and roadmap decisions.}
+\resumeItem{Retrieval \& Data Architecture for Agents}{Designed data models, retrieval strategies, and NL2SQL agents with abstention policies, and built RAG pipelines with incremental ingestion and citation-grounded answers.}
+\resumeItem{Regulated (HIPAA) AI Systems}{Architected event-driven document pipelines processing PHI (Document AI, Gemini, Pub/Sub, Cloud Run) with compliance by design, architecture decision records, and full monitoring.}
+\resumeItem{Real-Time Multimodal Agents}{Shipped voice agents that operate web applications through live native-audio models and function calling (Gemini Live, ADK, FastAPI WebSockets, React).}
+\resumeItem{Multi-Agent Pre-sales Automation}{Built a LangGraph multi-agent tool with human-in-the-loop review that turns discovery calls into cloud proposals, backlogs, and SOWs.}
 \resumeItemListEnd
 
 
@@ -161,10 +166,6 @@ I hold a Master's in Engineering from Shinshu University as a MEXT Government Sc
 {Deployed a production anomaly detection system on AWS SageMaker anticipating failures up to two weeks ahead and flagging $\sim$70\% of maintenance interventions; companion explainability API surfaced root-cause diagnostics for maintenance engineers.}
 \resumeItem{End-to-End MLOps}
 {Built a reproducible MLOps pipeline (MLflow, Docker, Kubernetes, AWS) spanning automated training, versioning, deployment, and live monitoring via Grafana dashboards backed by InfluxDB, enabling iterative model improvements at production scale with full experiment lineage tracking.}
-\resumeItem{Deep Generative Modeling}
-{Initiated PyTorch VAE research for wind turbine fault classification using latent-space health indicators and reconstruction-error thresholding over SCADA signals; architecture designed and early training conducted before project handoff.}
-\resumeItem{LLM Fine-Tuning Research}
-{Led technical scoping to domain-adapt an open-weights LLM via Supervised Fine-Tuning (SFT) for NL-to-structured IoT workflow compilation; designed training corpus pipeline and execution-based evaluation harness; proposal approved by corporate leadership.}
 \resumeItemListEnd
 
 
@@ -180,49 +181,60 @@ I hold a Master's in Engineering from Shinshu University as a MEXT Government Sc
 {Led end-to-end IoT product development with full Docker containerization of the edge-to-cloud stack (MQTT Broker, PostgreSQL, InfluxDB, Grafana, Python services); implemented edge computing including FFT calculations directly on Senspider hardware.}
 \resumeItemListEnd
 
-\resumeSubheadingAlt
-{SSE Gridtech}{Curitiba, Brazil}
-{R\&D Engineer}{Jan. 2016 -- Aug. 2016}
-{Internship}{Oct. 2014 -- Dec. 2015}
-\resumeItemListStart
-\resumeItem{Smart Grid \& IoT Solutions}
-{Developed a long-range LoRaWAN-based communication system to optimize smart metering infrastructure, reducing GSM dependency.}
-\resumeItemListEnd
-
-
   \resumeSubHeadingListEnd
 
+%--------TECHNICAL EXPERTISE------------
+\needspace{8\baselineskip}
+\section{Technical Expertise}
+
+{\setstretch{1.25}
+\begin{tabular}{l @{\quad} p{0.68\linewidth}}
+	\textbf{Architecture \& Practices:}& Solution architecture, ADRs, event-driven design, HIPAA compliance.\\
+	\textbf{Programming Languages:}& Python, C, C++, Bash (Unix Shell).\\
+	\textbf{LLM \& Agentic Frameworks:}& Google ADK, LangGraph, LangChain, Gemini Live, Vertex AI RAG, Claude.\\
+	\textbf{Evaluation \& Tracing:}& LLM-as-Judge, Langfuse, LangSmith, OpenTelemetry, Grafana.\\
+	\textbf{ML \& Deep Learning:}& PyTorch, Hugging Face, scikit-learn, XGBoost.\\
+	\textbf{Cloud Platforms:}& GCP (Vertex AI, Document AI, Cloud Run, Pub/Sub), AWS (SageMaker).\\
+	\textbf{MLOps \& Deployment:}& Docker, Kubernetes, MLflow, Git, GitHub Actions CI/CD.\\
+	\textbf{Full-Stack:}& React, TypeScript, FastAPI, WebSockets, SSE streaming.\\
+	\textbf{Data Engineering:}& PostgreSQL, Cloud SQL, Firestore, BigQuery, Redshift, InfluxDB.\\
+	\textbf{Embedded Systems:}& ARM Cortex-M, Jetson Nano, Arduino, FreeRTOS, MQTT.\\
+	\textbf{Optimization:}& Bayesian Optimization, Multi-objective Evolutionary Algorithms.\\
+\end{tabular}\par}
+
+
+%-----------CERTIFICATIONS-----------------
+\needspace{5\baselineskip}
+\section{Certifications}
+\resumeSubHeadingListStart
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Claude Certified Architect -- Foundations}, Anthropic & \textit{\small \href{https://www.credly.com/badges/25838dd7-bd89-4994-a060-ec7bbb5e2243/public_url}{Jul. 2026}} \\
+\end{tabular*}\vspace{-5pt}
+\resumeSubHeadingListEnd
+
 %-----------RESEARCH EXPERIENCE-----------------
+\needspace{8\baselineskip}
 \section{Research Experience}
 \resumeSubHeadingListStart
-
 \resumeSubheading
 {University of Warwick, Warwick Business School}{Coventry, United Kingdom}
 {Research}{Oct. 2019 -- Apr. 2022}
 \resumeItemListStart
-\resumeItem{Field of Research}
-{Ranking \& Selection; Bayesian Optimization; Reinforcement Learning.}
-\resumeItem{Research}
-{Investigated sample-efficient policy learning for automating constrained supply chain scheduling of biopharmaceutical products (personalized therapies); developed Multi-Objective MCTS (MO-MCTS) using marginal hypervolume as the selection criterion and integrated Evolutionary Algorithms to evolve base policies, combining Bayesian optimization with ranking-and-selection theory.}
-\resumeItem{Collaboration}
-{Under supervision of Prof. Juergen Branke, we collaborated with Prof. Chun-Hung Chen on two-stage Ranking and Selection (R\&S) problems, which contributed to research extending Optimal Computing Budget Allocation (OCBA) and Expected Value of Information (EVI) algorithms to efficiently allocate finite stochastic simulation budgets on Bayesian approaches for optimal decision-making.}
+\resumeItemAlt{}
+{Bayesian optimization and multi-objective MCTS for supply chain scheduling}
 \resumeItemListEnd
-
 \resumeSubheading
 {Shinshu University}{Nagano, Japan}
 {MSc Research}{Apr. 2017 -- Mar. 2019}
 \resumeItemListStart
-\resumeItem{Novel Method}
-{Developed a predictive model to approximate complex decision space geometries caused by difficult Pareto set topologies. The integration of this modeling as a mechanism into MOEAs proved to significantly improve solution distribution and convergence.}
-\resumeItem{Algorithm Analysis}
-{Analyzed Pareto dominance-based approaches on highly complex, multi-modal problems. Demonstrated that replacing standard operators with \textbf{Differential Evolution (DE) crossover} and neighborhood tournament selection substantially improves search ability and Pareto Front coverage.}
-\resumeItem{Collaboration \& Recognition}
-{Collaborated with researchers across the \textbf{International Associated Laboratory LIA-MODO} (Shinshu University, Inria France, and UAM Mexico). Joint research on spline interpolation for bi-objective problems culminated in multiple publications and the \textbf{Best Student Paper Award at EMO-2019} (Michigan State University, US).}
+\resumeItemAlt{}
+{Multi-objective evolutionary algorithms; Best Student Paper Award, EMO 2019 (East Lansing, MI, USA)}
 \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
+\needspace{8\baselineskip}
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
@@ -244,45 +256,9 @@ I hold a Master's in Engineering from Shinshu University as a MEXT Government Sc
 {Bachelor of Engineering in Electronics}{Jan. 2010 -- Jul. 2016}
 \resumeSubHeadingListEnd
 
-\newpage
-
-%--------TECHNICAL EXPERTISE------------
-\section{Technical Expertise}
-
-\begin{tabular}{l @{\quad} p{0.6\linewidth}}
-	\textbf{Programming Languages:}& Python, C, C++, Bash (Unix Shell).\\
-	\textbf{ML \& Deep Learning:}& PyTorch, Hugging Face Transformers, scikit-learn, XGBoost.\\
-	\textbf{LLM \& Agentic Frameworks:}& LangChain, LangGraph, Google ADK, Gemini Live API, OpenAI API, Anthropic Claude.\\
-	\textbf{LLM Training \& Alignment:}& SFT, QLoRA, Unsloth.\\
-	\textbf{Observability \& Evaluation:}& Langfuse, LangSmith, OpenTelemetry, Grafana.\\
-	\textbf{MLOps \& Deployment:}& Docker, Kubernetes, MLflow, Git, CI/CD, FastAPI.\\
-	\textbf{Embedded Systems:}& ARM Cortex-M, Jetson Nano, Arduino, FreeRTOS, MQTT.\\
-	\textbf{Data Engineering \& Pipelines:}& PostgreSQL, Redshift, InfluxDB.\\
-	\textbf{Cloud Platforms:}& AWS (SageMaker, ECR, Lambda), GCP (Cloud Run, Vertex AI).\\
-	\textbf{Optimization:}& Bayesian Optimization, Multi-objective Evolutionary Algorithms.\\
-	\textbf{Operating Systems:}& Linux (Fedora, Ubuntu), Windows.\\
-\end{tabular}
-
-
-%-----------PUBLICATIONS-----------------
-\section{Main Publications}
-\resumeItemListStart
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Approximating Pareto set topology by cubic interpolation on bi-objective problems. 10th International Conference on Evolutionary Multi-Criterion Optimization (EMO 2019), Lecture Notes in Computer Science (LNCS), Michigan, USA. \textbf{(Best Student Paper Award)}}
-    \resumeItemAlt{}
-    {\textbf{Y. Marca}, H. Aguirre, S. Zapotecas-Martinez, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. MOEA with Cubic Interpolation on Bi-objective Problems with Difficult Pareto Set Topology (2019). doi:10.11394/tjpnsec.10.12.}
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. NSGA-II with Spline Interpolation on Bi-objective Problems with Difficult Pareto Set Topology. JPNSEC 2018 Symposium on Evolutionary Computation, Fukuoka, 2018. \textbf{(Young Research Award)}}
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. MOEAs on Problems with Difficult Pareto Set Topologies. IEICE Shin-etsu Branch IEEE Session, Niigata University, 2018, p. 169.\textbf{(Young Research Award)}}
-	\resumeItemAlt{}
-	{\textbf{Y. Marca}, H. Aguirre, S. Zapotecas, A. Liefooghe, B. Derbel, S. Verel, and K. Tanaka. Pareto dominance-based MOEAs on problems with difficult pareto set topologies. In Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '18). ACM, New York, NY, USA, 189-190.}
-
-
-\resumeItemListEnd
-
 
 %--------LANGUAGES------------
+\needspace{5\baselineskip}
 \section{Languages}
 
 \begin{tabular}{l @{\quad} l}
