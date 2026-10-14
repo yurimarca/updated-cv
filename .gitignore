@@ -2,4 +2,5 @@
 *.out
 *.log
 *.gz
+*.dvi
 reference/
